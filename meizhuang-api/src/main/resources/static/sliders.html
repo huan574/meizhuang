@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>统</title>
+<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="mobile-web-app-capable" content="yes">
+<meta http-equiv="expires" content="0">  
+<meta http-equiv="pragma" content="no-cache">  
+<meta http-equiv="cache-control" content="no-cache"> 
+ 
+<link rel="stylesheet" href="/static/css/sliders.css">
+<script type="text/javascript" src="/static/js/sliders.js"></script>
+
+
+
+</head>
+<body>
+<div class="sliders-wraper" id="rotation-1">
+	<ul class="sliders clear">
+		<li class="slider" style="background:purple">5</li>
+		<li class="slider" style="background:pink">11</li>
+		<li class="slider" style="background:beige">22</li>
+		<li class="slider" style="background:gold">33</li>
+		<li class="slider" style="background:skyblue">44</li>
+		<li class="slider" style="background:purple">55</li>
+		<li class="slider" style="background:pink">1</li>
+	</ul>
+	<div class="pagenation" style="display: none">
+		<div class="page page-active"><a></a></div>
+		<div class="page"><a></a></div>
+		<div class="page"><a></a></div>
+		<div class="page"><a></a></div>
+		<div class="page"><a></a></div>
+	</div>
+    
+</div>
+
+<script type="text/javascript">
+
+var r2 = rotation({
+	el: 'rotation-1',
+	mode: 'easy-in-out', //运动曲线
+	auto: true,//开启自动轮播
+	btn: false, //左右按钮
+	focusBtn: false//焦点
+})
+window.onresize = function(){
+	r2 && r2.refresh()
+}
+
+</script>
+
+
+<div>文字滚动</div>
+<style type="text/css">
+body,ul,li,a,p,div{padding:0px; margin:0px; font-size:14px;}
+ul,li{list-style:none;}
+a{ text-decoration:none; color:#333;}
+ #demo{
+  overflow:hidden; /*溢出的部分不显示*/
+  width:290px;
+  height:228px;/*一定要确切，避免demo1与demo2之间的距离过大*/
+  padding:5px;
+  margin:50px auto;
+  }
+#express li{
+   list-style:none;
+   font-size:14px;
+   height:25px;
+   margin:0px 5px;
+   line-height:180%;/*行与行之间的距离*/
+   letter-spacing:2px;/*字与字之间的距离*/
+   border-bottom:1px dashed #ccc;
+   cursor:pointer;
+   }
+</style>
+
+<div id="demo" >
+ <div id="demo1" >
+  <ul id="express">
+   <li><a href="#">召开背街小巷综合整治工作调度会</a></li>
+   <li><a href="#">平原街道加大出店经营整治</a></li>
+   <li><a href="#">平原街道召开计生业务培训会</a></li>
+　　　　　　　<li><a href="#">平原街道：干部进村入户宣传促征迁</a></li>
+　　　　　　　<li><a href="#">平原街道：为返乡群众免费孕检</a></li>
+   <li><a href="#">平原街道：狠抓春运道路交通安全</a></li>   
+  </ul>
+ </div>
+ <div id="demo2"></div>
+</div>
+
+<script type="text/javascript">
+ //获取id=demo,id=demo1,id=demo2的元素对象，并把id=demo1的内容赋值给id=demo2
+ var demo=document.getElementById("demo");
+ var demo1=document.getElementById("demo1");
+ var demo2=document.getElementById("demo2");
+ demo2.innerHTML=demo1.innerHTML;
+ //给demo1,demo2加相同的高度
+ demo1.style.height=demo.offsetHeight+"px";
+ demo2.style.height=demo.offsetHeight+"px";
+ //定时器，每隔50毫秒调用一次scrollup()函数，来实现文字的滚动
+ var timer=window.setInterval("scrollup()",50);
+ //定义函数
+ function scrollup()
+ {
+  //如果demo滚上去的高度大于demo的高度，重新给demo赋值从0再开始滑动
+  if(demo.scrollTop>=demo.offsetHeight)
+  {
+   demo.scrollTop=0;
+  }else
+  {
+   demo.scrollTop++;
+  }
+ }
+ //鼠标放上停止滚动，鼠标离开继续滚动
+  demo.onmouseover=function(){
+         //清除定时器
+         clearInterval(timer);
+         }
+  demo.onmouseout=function(){
+         //添加定时器
+         timer=window.setInterval("scrollup()",50);
+         }
+ 
+</script>
+
+<div id="scroll_div" class="fl"> 
+  <div id="scroll_begin">
+   <a href="#">恭喜793765***获得 <span class="pad_right">50元巨人点卡奖励</span></a>
+   <a href="#">恭喜793765***获得 <span class="pad_right">50元巨人点卡奖励</span></a>
+   <a href="#">恭喜793765***获得 <span class="pad_right">50元巨人点卡奖励</span></a>
+   <a href="#">恭喜793765***获得 <span class="pad_right">50元巨人点卡奖励</span></a>
+   <a href="#">恭喜793765***获得 <span class="pad_right">50元巨人点卡奖励</span></a>
+   <a href="#">恭喜793765***获得 <span class="pad_right">50元巨人点卡奖励</span></a>
+   <a href="#">恭喜793765***获得 <span class="pad_right">50元巨人点卡奖励</span></a>
+  </div> 
+  <div id="scroll_end"></div>
+ </div> 
+ 
+ <style type="text/css">
+ 
+ .pad_right{ padding-right:2em;}
+#scroll_div {height:26px;overflow: hidden;white-space: nowrap;width:100%;margin:0 auto;}
+#scroll_begin,#scroll_end {display: inline;}
+ </style>
+ 
+ <script type="text/javascript">
+ //文字横向滚动
+function ScrollTextLeft(){ 
+ var speed=30;
+  var MyMar = null;
+ var scroll_begin = document.getElementById("scroll_begin"); 
+ var scroll_end = document.getElementById("scroll_end"); 
+ var scroll_div = document.getElementById("scroll_div"); 
+ scroll_end.innerHTML=scroll_begin.innerHTML; 
+ function Marquee(){ 
+  if(scroll_end.offsetWidth-scroll_div.scrollLeft<=0) 
+   scroll_div.scrollLeft-=scroll_begin.offsetWidth; 
+  else
+   scroll_div.scrollLeft++; 
+  } 
+  MyMar=setInterval(Marquee,speed); 
+  scroll_div.onmouseover = function(){
+　　　　　　　clearInterval(MyMar);
+　　　　　}
+ 　　　　scroll_div.onmouseout = function(){
+　　　　　　　MyMar = setInterval(Marquee,speed); 　　　　
+　　　　　}  
+}
+ScrollTextLeft();
+ </script>
+
+</body></html>

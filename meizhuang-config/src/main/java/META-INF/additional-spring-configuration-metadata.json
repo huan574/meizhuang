@@ -1,0 +1,202 @@
+{"properties": [
+  {
+    "name": "spring.datasource.lazy",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.lazy'"
+  },
+  {
+    "name": "spring.datasource.lazy.url",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.lazy.url'"
+  },
+  {
+    "name": "spring.datasource.lazy.username",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.lazy.username'"
+  },
+  {
+    "name": "spring.datasource.lazy.password",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.lazy.password'"
+  },
+  {
+    "name": "spring.datasource.lazy.driverClassName",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.lazy.driverClassName'"
+  },
+  {
+    "name": "spring.datasource.lazy.initialSize",
+    "type": "java.lang.Integer",
+    "description": "A description for 'spring.datasource.lazy.initialSize'"
+  },
+  {
+    "name": "spring.datasource.lazy.minIdle",
+    "type": "java.lang.Integer",
+    "description": "A description for 'spring.datasource.lazy.minIdle'"
+  },
+  {
+    "name": "spring.datasource.lazy.maxActive",
+    "type": "java.lang.Integer",
+    "description": "A description for 'spring.datasource.lazy.maxActive'"
+  },
+  {
+    "name": "spring.datasource.lazy.maxWait",
+    "type": "java.lang.Integer",
+    "description": "A description for 'spring.datasource.lazy.maxWait'"
+  },
+  {
+    "name": "spring.datasource.lazy.timeBetweenEvictionRunsMillis",
+    "type": "java.lang.Integer",
+    "description": "A description for 'spring.datasource.lazy.timeBetweenEvictionRunsMillis'"
+  },
+  {
+    "name": "spring.datasource.lazy.minEvictableIdleTimeMillis",
+    "type": "java.lang.Integer",
+    "description": "A description for 'spring.datasource.lazy.minEvictableIdleTimeMillis'"
+  },
+  {
+    "name": "spring.datasource.lazy.validationQuery",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.lazy.validationQuery'"
+  },
+  {
+    "name": "spring.datasource.lazy.testWhileIdle",
+    "type": "java.lang.Boolean",
+    "description": "A description for 'spring.datasource.lazy.testWhileIdle'"
+  },
+  {
+    "name": "spring.datasource.lazy.testOnBorrow",
+    "type": "java.lang.Boolean",
+    "description": "A description for 'spring.datasource.lazy.testOnBorrow'"
+  },
+  {
+    "name": "spring.datasource.lazy.testOnReturn",
+    "type": "java.lang.Boolean",
+    "description": "A description for 'spring.datasource.lazy.testOnReturn'"
+  },
+  {
+    "name": "spring.datasource.lazy.poolPreparedStatements",
+    "type": "java.lang.Boolean",
+    "description": "A description for 'spring.datasource.lazy.poolPreparedStatements'"
+  },
+  {
+    "name": "spring.datasource.lazy.maxPoolPreparedStatementPerConnectionSize",
+    "type": "java.lang.Integer",
+    "description": "A description for 'spring.datasource.lazy.maxPoolPreparedStatementPerConnectionSize'"
+  },
+  {
+    "name": "spring.datasource.lazy.filters",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.lazy.filters'"
+  },
+  {
+    "name": "spring.datasource.lazy.connectionProperties",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.lazy.connectionProperties'"
+  },
+  {
+    "name": "spring.datasource.lazy.useGlobalDataSourceStat",
+    "type": "java.lang.Boolean",
+    "description": "A description for 'spring.datasource.lazy.useGlobalDataSourceStat'"
+  },
+  {
+    "name": "druid.login.username",
+    "type": "java.lang.String",
+    "description": "A description for 'druid.login.username'"
+  },
+  {
+    "name": "druid.login.password",
+    "type": "java.lang.String",
+    "description": "A description for 'druid.login.password'"
+  },
+  {
+    "name": "accessKeyId",
+    "type": "java.lang.String",
+    "description": "A description for 'accessKeyId'"
+  },
+  {
+    "name": "ossBasePath",
+    "type": "java.lang.String",
+    "description": "A description for 'ossBasePath'"
+  },
+  {
+    "name": "accessKeySecret",
+    "type": "java.lang.String",
+    "description": "A description for 'accessKeySecret'"
+  },
+  {
+    "name": "endpoint",
+    "type": "java.lang.String",
+    "description": "A description for 'endpoint'"
+  },
+  {
+    "name": "bucketName",
+    "type": "java.lang.String",
+    "description": "A description for 'bucketName'"
+  },
+  {
+    "name": "swagger.show",
+    "type": "java.lang.Boolean",
+    "description": "A description for 'swagger.show'"
+  },
+  {
+    "name": "sms.send.sign",
+    "type": "java.lang.String",
+    "description": "A description for 'sms.send.sign'"
+  },
+  {
+    "name": "sms.send.state",
+    "type": "java.lang.Boolean",
+    "description": "A description for 'sms.send.state'"
+  },
+  {
+    "name": "bank.card.auth.state",
+    "type": "java.lang.Boolean",
+    "description": "A description for 'bank.card.auth.state'"
+  },
+  {
+    "name": "redis.host",
+    "type": "java.lang.String",
+    "description": "A description for 'redis.host'"
+  },
+  {
+    "name": "redis.port",
+    "type": "java.lang.String",
+    "description": "A description for 'redis.port'"
+  },
+  {
+    "name": "redis.password",
+    "type": "java.lang.String",
+    "description": "A description for 'redis.password'"
+  },
+  {
+    "name": "redis.timeout",
+    "type": "java.lang.String",
+    "description": "A description for 'redis.timeout'"
+  },
+  {
+    "name": "redis.database",
+    "type": "java.lang.String",
+    "description": "A description for 'redis.database'"
+  },
+  {
+    "name": "redis.pool.max-active",
+    "type": "java.lang.String",
+    "description": "A description for 'redis.pool.max-active'"
+  },
+  {
+    "name": "redis.pool.max-wait",
+    "type": "java.lang.String",
+    "description": "A description for 'redis.pool.max-wait'"
+  },
+  {
+    "name": "redis.pool.max-idle",
+    "type": "java.lang.String",
+    "description": "A description for 'redis.pool.max-idle'"
+  },
+  {
+    "name": "redis.pool.min-idle",
+    "type": "java.lang.String",
+    "description": "A description for 'redis.pool.min-idle'"
+  }
+]}

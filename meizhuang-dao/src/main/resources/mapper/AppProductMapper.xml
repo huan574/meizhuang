@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.meizhuang.mapper.meizhuang.AppProductMapper">
-
-	<!--  -->
-	<select id="getAppProcuctByAppId" resultType="com.meizhuang.entity.AppProduct">
-	      select *from app_product where app_id = #{appId}
-	</select>
-</mapper>  
